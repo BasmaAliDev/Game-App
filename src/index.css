@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+
+:root {
+  --main-color: #272b30;
+  --seconde-color: #32383e;
+  --color-text: #fff;
+  --btn-main-color: #272729;
+}
+body {
+  font-family: "Comfortaa", cursive;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: var(--main-color) !important;
+  color: var(--color-text) !important;
+}
+.text-gray{
+  color: gray;
+}
+.bg-main{
+  background-color:var(--main-color) !important;
+}
+.btn-main {
+  background-color: var(--seconde-color);
+  color: var(--color-text);
+  font-size: smaller;
+  border-color: #111112 !important;
+}
+
+input{
+  background-color:#111112 !important;
+  color: #fff !important;
+}
+::placeholder {
+  color: gray !important;
+  font-size: small;
+}
+/**********************navbar**************/
+.navbar{
+  z-index: 99999;
+  border-color: #111112 !important;
+}
+.navbar li{
+ padding: 0rem 0.5rem;
+  font-size: small;
+}
+.navbar-brand{
+ font-size: 1.2rem;
+  font-family:  cursive;;
+}
+.navbar .dropdown:hover .dropdown-menu {
+  display: block ;
+background-color: black;
+  width: fit-content;
+  padding: 1rem;
+}
+.navbar .dropdown-menu a {
+   color:#fff ;
+   font-weight: 600;
+  }
+  .navbar .dropdown-menu a:hover{
+    background-color: rgba(187, 180, 180, 0.1);;
+  }
+.navbar .dropdown-menu .dropdown-item {
+  text-align: center;
+  transition: all 0.3s;}
+
+.navbar .dropdown-menu .active{
+  color: var(--color-text);
+  background-color:rgb(0 0 0 / 0.7) !important ;
+  border-radius: 3px rgb(0 0 0 / 0.7);
+}
+
+@media screen and (max-width:1200px) {
+.play-now a{
+  font-size: small;
+  padding: 0px;
+} 
+}
+@media screen and (max-width:992px) {
+  .play-now a{
+    font-size: small;
+    padding: 0.5rem !important;
+  } 
+  }
+  @media screen and (max-width:766px) {
+    .play-now a{
+      font-size: small;
+      padding: 0.5rem !important;
+    } 
+    .slider p{
+      font-size: small;
+    }
+    }
+  
